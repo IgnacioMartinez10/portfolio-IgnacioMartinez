@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Saira+Condensed:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: lightgray;
+    height:100vh;
+    nav{
+        width:100%;
+        height: 3.2rem;
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 1.5rem;
+            li{
+                list-style: none;
+                margin-right: 1rem;
+                a{
+                    font-size: 1.3rem;
+                    font-family: 'Montserrat', sans-serif;
+                    text-decoration: none;
+                    color: rgb(1, 1, 76);
+                    margin:0 0.7rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    i{
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .Home_intro{
+        width: 50%;
+        margin-left: 3rem;
+        
+        .saludo, .dev{
+            font-weight: 400;
+            font-size: 3.8rem;
+            font-family: 'Saira Condensed', sans-serif;
+            color: rgb(1, 1, 76);
+        }
+        .nombre{
+            font-size: 5.7rem;
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight:800;
+            color: #3089dc;
+        }
+    }
+    .Home_imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .redes{
+            font-size: 80px;
+            text-decoration: none;
+            text-align: center;
+            margin: 4px 10px;
+            color: rgb(1, 1, 76);
+            &:hover{
+                color: #3089dc;
+            }
+        }
+    }
+}
+
+

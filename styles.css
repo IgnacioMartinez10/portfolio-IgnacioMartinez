@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Saira+Condensed:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightgray;
+  height: 100vh;
+}
+
+header nav {
+  width: 100%;
+  height: 3.2rem;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5rem;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+header nav ul li a {
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #01014c;
+  margin: 0 0.7rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a i {
+  margin-right: 0.5rem;
+}
+
+.presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.presentacion .Home_intro {
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.presentacion .Home_intro .saludo, .presentacion .Home_intro .dev {
+  font-weight: 400;
+  font-size: 3.8rem;
+  font-family: 'Saira Condensed', sans-serif;
+  color: #01014c;
+}
+
+.presentacion .Home_intro .nombre {
+  font-size: 5.7rem;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 800;
+  color: #3089dc;
+}
+
+.presentacion .Home_imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.presentacion .Home_imagen .redes {
+  font-size: 80px;
+  text-decoration: none;
+  text-align: center;
+  margin: 4px 10px;
+  color: #01014c;
+}
+
+.presentacion .Home_imagen .redes:hover {
+  color: #3089dc;
+}
+/*# sourceMappingURL=styles.css.map */
