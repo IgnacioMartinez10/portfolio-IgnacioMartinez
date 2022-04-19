@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Saira+Condensed:wght@400;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Saira+Condensed:wght@400;500;800&display=swap');
+@import '_variables';
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ header{
                     font-size: 1.3rem;
                     font-family: 'Montserrat', sans-serif;
                     text-decoration: none;
-                    color: rgb(1, 1, 76);
+                    color: $color-blueNight;
                     margin:0 0.7rem;
                     &:hover{
                         text-decoration: underline;
@@ -39,46 +39,80 @@ header{
             }
         }
     }
-}
-
-.presentacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    .Home_intro{
-        width: 50%;
-        margin-left: 3rem;
-        
-        .saludo, .dev{
-            font-weight: 400;
-            font-size: 3.8rem;
-            font-family: 'Saira Condensed', sans-serif;
-            color: rgb(1, 1, 76);
+    .presentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        .homeIntro{
+            width: 50%;
+            margin-left: 3rem;
+            
+            .saludo, .dev{
+                font-weight: 400;
+                font-size: 3.8rem;
+                font-family: 'Saira Condensed', sans-serif;
+                color: $color-blueNight;
+            }
+            .nombre{
+                font-size: 5rem;
+                font-family: 'Saira Condensed', sans-serif;
+                font-weight:800;
+                color: $color-blueLight;
+            }
         }
-        .nombre{
-            font-size: 5.7rem;
-            font-family: 'Saira Condensed', sans-serif;
-            font-weight:800;
-            color: #3089dc;
+        .homeImagen{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            img{
+                width: 500px;
+            }
+            .redes{
+                font-size: 80px;
+                text-decoration: none;
+                text-align: center;
+                margin: 4px 10px;
+                color: $color-blueNight;
+                &:hover{
+                    color: $color-blueLight;
+                }
+            }
         }
     }
-    .Home_imagen{
+    .arrowContent{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        .redes{
-            font-size: 80px;
-            text-decoration: none;
-            text-align: center;
-            margin: 4px 10px;
-            color: rgb(1, 1, 76);
+        flex-direction: row;
+        justify-content: center;
+        .arrow{
+            font-size: 4rem;
+            margin-top: 60px;
+            color: $color-blueNight;
             &:hover{
-                color: #3089dc;
+                color:$color-blueLight;
+                cursor: pointer;
             }
         }
     }
 }
+
+.aboutContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 3rem;
+        span{
+            font-size: 3rem;
+            font-family: 'Saira Condensed', sans-serif;
+            font-weight: 500;
+            color: $color-blueNight;
+        }
+    }
+
+
+
 
 
