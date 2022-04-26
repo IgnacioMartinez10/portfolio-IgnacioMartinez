@@ -16,8 +16,8 @@
         <nav>
             <ul class="ul">
                 <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fas fa-user"></i>Sobre mi</a></li>
-                <li><a href="#"><i class="fas fa-laptop-code"></i>Proyectos</a></li>
+                <li><a href="#projects"><i class="fas fa-laptop-code"></i>Proyectos</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i>Sobre mi</a></li>
                 <li><a href="#"><i class="fas fa-inbox"></i>Contacto</a></li>
             </ul>
         </nav>
@@ -29,6 +29,14 @@
                 <br>
                 <span class="dev">Frontend Developer.</span>
                 <br>
+                <div class="skillsContent">
+                    <img src="img/html5.svg" alt="">
+                    <img src="img/css3.svg" alt="">   
+                    <img src="img/javascript.svg" alt="">   
+                    <img src="img/sass.svg" alt="">   
+                    <img src="img/react-logo.svg" alt="">   
+
+                </div>
 
             </div>
             <div class="homeImagen">
@@ -41,19 +49,34 @@
             </div>
         </section>
         <div class="arrowContent">
-            <i class="arrow far fa-arrow-alt-circle-down"></i>
+            <a href="#projects"><i class="arrow far fa-arrow-alt-circle-down"></i></a>
         </div>
     </header>
-    <section class="aboutContent">
+    <section class="projects" id="projects">
+        <h3 class="projectsTitle">Proyectos</h3>
+        <section class="projectsContent">
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+            <div class="projectsCard"><img src="img/comingSoon.jpeg" alt=""></div>
+
+        </section>
+    </section>
+    <section class="aboutContent" id="about">
         <span class="aboutTitle">Sobre mi</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae, saepe aliquid reiciendis alias
+        <span class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae, saepe aliquid reiciendis alias
             veritatis laboriosam eligendi eaque et enim itaque ad mollitia totam. Harum soluta deserunt esse
             nesciunt ex temporibus autem quas fugiat exercitationem nihil ipsa dolorum possimus beatae ut ipsum,
             libero laboriosam quaerat veritatis vel assumenda, voluptatibus illum eos voluptatum! Quam natus
-            quibusdam deleniti quae, amet est totam similique perspiciatis.</p>
+            quibusdam deleniti quae, amet est totam similique perspiciatis.</span>
     </section>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

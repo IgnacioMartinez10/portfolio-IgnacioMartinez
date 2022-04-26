@@ -4,8 +4,11 @@
   padding: 0;
 }
 
-header {
+body {
   background-color: lightgray;
+}
+
+header {
   height: 100vh;
 }
 
@@ -61,6 +64,7 @@ header nav ul li a i {
 }
 
 header .presentacion {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +86,8 @@ header .presentacion .homeIntro {
   margin-left: 3rem;
 }
 
-header .presentacion .homeIntro .saludo, header .presentacion .homeIntro .dev {
+header .presentacion .homeIntro .saludo,
+header .presentacion .homeIntro .dev {
   font-weight: 400;
   font-size: 3.8rem;
   font-family: 'Saira Condensed', sans-serif;
@@ -94,6 +99,34 @@ header .presentacion .homeIntro .nombre {
   font-family: 'Saira Condensed', sans-serif;
   font-weight: 800;
   color: #3089dc;
+}
+
+header .presentacion .homeIntro .skillsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem 2.2rem;
+}
+
+header .presentacion .homeIntro .skillsContent img {
+  width: 80px;
+}
+
+header .presentacion .homeIntro .skillsContent img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 header .presentacion .homeImagen {
@@ -122,6 +155,10 @@ header .presentacion .homeImagen .redes {
 
 header .presentacion .homeImagen .redes:hover {
   color: #3089dc;
+  -webkit-transform: scale(1.2 1.2);
+          transform: scale(1.2 1.2);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 header .arrowContent {
@@ -147,10 +184,15 @@ header .arrowContent .arrow {
 header .arrowContent .arrow:hover {
   color: #3089dc;
   cursor: pointer;
+  -webkit-transform: scale(1.2 1.2);
+          transform: scale(1.2 1.2);
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.aboutContent {
-  width: 50%;
+.projects {
+  width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,14 +200,64 @@ header .arrowContent .arrow:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
-  margin-left: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.aboutContent span {
-  font-size: 3rem;
+.projects .projectsTitle {
+  font-size: 4rem;
   font-family: 'Saira Condensed', sans-serif;
-  font-weight: 500;
-  color: #01014c;
+  font-weight: 800;
+  color: #3089dc;
+}
+
+.projects .projectsContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.projects .projectsContent .projectsCard {
+  width: 320px;
+  border: 5px solid gray;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px 3px;
+          box-shadow: 3px 3px 3px 3px;
+}
+
+.projects .projectsContent .projectsCard img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutContent {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutContent .aboutTitle {
+  font-size: 4rem;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 800;
+  color: #3089dc;
+}
+
+.aboutContent .aboutText {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
